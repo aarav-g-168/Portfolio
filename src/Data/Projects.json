@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Movie Vault",
+        "imageSrc": "/assets/Projects/movie.png",
+        "description": "A Next.js-based movie vault that allows users to explore their favorite movies using TMDb API.",
+        "skill": ["Next.js", "TypeScript", "TMDb API", "Tailwind CSS"],
+        "demo": "https://movie-vault-nu.vercel.app/",
+        "source": "https://github.com/aarav-g-168/MovieVault"
+    },
+    {
+        "title": "Medicine Distributor",
+        "imageSrc": "/assets/Projects/med.png",
+        "description": "A medicine distribution platform to improve rural healthcare access through tech.",
+        "skill": ["Gemini API", "HTML", "Flask", "CSS"],
+        "demo": "https://reach-me-sigma.vercel.app/",
+        "source": "https://github.com/ChirayuSahu/ReachMe"
+    },
+    {
+        "title": "Discord Bot",
+        "imageSrc": "/assets/Projects/discord.svg",
+        "description": "A custom Discord bot designed to enhance server functionality and engagement.",
+        "skill": ["Jsonify", "SQLite", "Gemini API", "Python"],
+        "demo": "https://movievault.example.com",
+        "source": "https://github.com/aarav-g-168/Discord-Bot"
+    }
+]
