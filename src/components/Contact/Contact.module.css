@@ -15,8 +15,21 @@
 
 .text h2 {
     font-size: 80px;
-    font-weight: 700;
     letter-spacing: 4px;
+    background: linear-gradient(90deg, 
+        #ff0000, #ff7f00, #ffff00, #00ff00, 
+        #38e8f5, #0e89ee, #9900ff
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: rainbowAnimation 2s infinite alternate;
+}
+
+@keyframes rainbowAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 .text p {
@@ -40,14 +53,19 @@
     width: auto;
 }
 
+.link img {
+    width: 30px;
+    height: 30px;
+}
+
 .link a {
-    color: var(--color-text);
     text-decoration: none;
     font-size: 30px;
-    font-weight: 400;
     letter-spacing: 1.5px;
-    color: white;
     width: auto;
+    font-weight: bold;  
+    color: white;
+    transition: transform 0.3s ease, background 0.5s;
 }
 
 @media screen and (max-width:830px) {
@@ -62,7 +80,31 @@
         align-items: center;
     }
 
+    .text h2 {
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+
+    .text p {
+        margin-bottom: 10px;
+    }
+
     .links {
         align-items: center;
+        flex-direction: row;
+    }
+
+    .link a:nth-of-type(2) {
+        display: none;
+    }
+
+    .link img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s;
+    }
+
+    .link img:hover {
+        transform: scale(1.1);
     }
 }

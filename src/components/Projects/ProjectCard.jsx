@@ -22,11 +22,11 @@ export const ProjectCard = ({ project: {title, imageSrc, description, skill, dem
         </ul>
         <div className = {styles.links}>
             <a href = {demo} className = {styles.link}>
-                Demo
+                Have a look🚀
             </a>
-            <a href = {source} className = {styles.link}>
-                Source
-            </a>    
+            <a href = {source}>
+                <img src='/assets/contact/repo.png' className = {styles.repo}/>
+            </a>
         </div>
     </div>
   );

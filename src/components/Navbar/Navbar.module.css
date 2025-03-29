@@ -1,6 +1,5 @@
 @import "../../vars.css";
 
-/* designing Navbar */
 .navbar {
     position: relative;
     display: flex;
@@ -11,12 +10,15 @@
     margin: 0 10%;
 }
 
-/* designing title bar */
 .title {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
     color: #FFC0CB;
+}
+
+.title:hover {
+    animation: pulse 0.6s infinite;
 }
 
 .menu {
@@ -35,6 +37,19 @@
     text-decoration: none;
     position: relative;
     z-index: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menuItems a:hover {
+    animation: pulse 0.6s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 .menuBtn {
@@ -43,7 +58,6 @@
     display: none;
 }
 
-/* For Phone Screen */
 @media screen and (max-width: 830px) {
     .navbar {
         flex-direction: column;
@@ -63,6 +77,8 @@
     .menuBtn {
         display: block;
         cursor: pointer;
+        position: relative;
+        left: 40px;
     }
 
     .menuItems {
@@ -80,5 +96,7 @@
     .menuOpen {
         display: flex;
         z-index: 1;
-    }
+        background-color: rgba(13, 110, 253, 0.5);
+        color: white;
+    }    
 }
