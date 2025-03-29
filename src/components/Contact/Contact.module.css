@@ -28,8 +28,8 @@
 }
 
 @keyframes rainbowAnimation {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
 }
 
 .text p {
@@ -44,6 +44,24 @@
     align-items: flex-start;
     list-style: none;
     gap: 26px; 
+}
+
+.link a:nth-of-type(2) {
+    font-size: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.link a:nth-of-type(2):hover {
+    background: linear-gradient(90deg, 
+        #ff5e00, #ffc400, #00ff15, #00ccff, 
+        #4538f5, #c10eee, #f700ff
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 1s infinite linear;
+    transform: scale(1.05);
 }
 
 .link {
